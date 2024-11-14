@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="styleslogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/logo1.png" alt="">
+    </div>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input placeholder="Username" type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"></label>
+                    <input placeholder="Password" type="password" id="password" name="password" required>
+                </div>
+                <button type="submit"><a style="text-decoration: none; color: white;" href="index.html">Login</a></button>
+            </form>
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+            window.location.href = ''; // Redirige a index.html
+        });
+    </script>
+</body>
+</html>
+
+
