@@ -68,6 +68,11 @@ body {
     border-radius: 3px;
     box-sizing: border-box;
   }
+
+  .error{
+    color: red;
+    display: none;
+  }
   
   button[type="submit"] {
     background-color: #007bff;

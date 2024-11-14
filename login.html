@@ -22,17 +22,24 @@
                     <label for="password"></label>
                     <input placeholder="Password" type="password" id="password" name="password" required>
                 </div>
-                <button type="submit"><a style="text-decoration: none; color: white;" href="index.html">Login</a></button>
+                <button id="submit" type="submit"><a style="text-decoration: none; color: white;">Login</a></button>
             </form>
+            <p class="error">error! el usuario esta bloqueado</p>
             <p>Don't have an account? <a href="#">Sign Up</a></p>
         </div>
     </div>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script>
+        document.getElementById("submit").addEventListener("click", function() {
+            document.querySelector(".error").style.display = "block";
+        });
+    </script>
+    <!-- <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita el envío del formulario
             window.location.href = ''; // Redirige a index.html
         });
-    </script>
+    </script> -->
 </body>
 </html>
 
